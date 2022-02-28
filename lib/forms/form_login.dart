@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:pwpb1/layout/bottom_nav.dart';
-import 'package:pwpb1/pages/dashboard_page.dart';
+import 'package:pwpb1/pages/home_page.dart';
 
 class FormLogin extends StatefulWidget {
   const FormLogin({Key? key}) : super(key: key);
@@ -70,7 +68,7 @@ class _FormLoginState extends State<FormLogin> {
           InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const BottomNav()));
+                  MaterialPageRoute(builder: (context) => const HomePage()));
             },
             child: Container(
               margin: const EdgeInsets.only(top: 30),
